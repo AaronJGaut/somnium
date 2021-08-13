@@ -1,0 +1,3 @@
+export PATH=$RL_ROOT/build:$PATH
+export LD_LIBRARY_PATH=$RL_ROOT/build/lib:$LD_LIBRARY_PATH
+export UNNAMED_RESOURCE_PATH=$RL_ROOT/data
