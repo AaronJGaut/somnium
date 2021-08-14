@@ -1,6 +1,6 @@
-#include "remwave/Renderer.h"
+#include "somnium/Renderer.h"
 
-namespace remwave
+namespace somnium
 {
 
 class Renderer::Impl

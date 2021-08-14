@@ -1,7 +1,7 @@
-#include "remwave/Scene.h"
-#include "remwave/impl/Context.h"
+#include "somnium/Scene.h"
+#include "somnium/impl/Context.h"
 
-namespace remwave
+namespace somnium
 {
 
 class Scene::Impl

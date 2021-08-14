@@ -2,19 +2,19 @@
 
 namespace py = pybind11;
 
-#include "remwave/remwave.h"
+#include "somnium/somnium.h"
 
-PYBIND11_MODULE(remwave, m) {
-    py::class_<remwave::Scene>(m, "Scene")
+PYBIND11_MODULE(somnium, m) {
+    py::class_<somnium::Scene>(m, "Scene")
         .def(py::init<>())
     ;
-    py::class_<remwave::Camera>(m, "Camera")
+    py::class_<somnium::Camera>(m, "Camera")
         .def(py::init<>())
     ;
-    py::class_<remwave::Target>(m, "Target")
+    py::class_<somnium::Target>(m, "Target")
         .def(py::init<>())
     ;
-    py::class_<remwave::Renderer>(m, "Renderer")
+    py::class_<somnium::Renderer>(m, "Renderer")
         .def(py::init<>())
     ;
 }

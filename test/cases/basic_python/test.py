@@ -1,2 +1,2 @@
-import remwave
-scene = remwave.Scene()
+import somnium
+scene = somnium.Scene()

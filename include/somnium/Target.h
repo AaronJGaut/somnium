@@ -1,7 +1,7 @@
 #pragma once
 #include <memory>
 
-namespace remwave
+namespace somnium
 {
     class Target
     {

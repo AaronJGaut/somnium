@@ -1,10 +1,10 @@
 #pragma once
 #include <memory>
-#include "remwave/Target.h"
-#include "remwave/Scene.h"
-#include "remwave/Camera.h"
+#include "somnium/Target.h"
+#include "somnium/Scene.h"
+#include "somnium/Camera.h"
 
-namespace remwave
+namespace somnium
 {
     class Renderer
     {

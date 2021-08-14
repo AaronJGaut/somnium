@@ -1,5 +1,5 @@
-#include "remwave/remwave.h"
+#include "somnium/somnium.h"
 int main()
 {
-    remwave::Scene scene;
+    somnium::Scene scene;
 }

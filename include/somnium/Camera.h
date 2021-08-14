@@ -1,8 +1,8 @@
 #pragma once
 #include <memory>
-#include "remwave/Scene.h"
+#include "somnium/Scene.h"
 
-namespace remwave
+namespace somnium
 {
     class Camera
     {

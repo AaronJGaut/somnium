@@ -1,6 +1,6 @@
-#include "remwave/Target.h"
+#include "somnium/Target.h"
 
-namespace remwave
+namespace somnium
 {
 
 class Target::Impl

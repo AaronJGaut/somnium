@@ -1,6 +1,6 @@
-#include "remwave/Camera.h"
+#include "somnium/Camera.h"
 
-namespace remwave
+namespace somnium
 {
 
 class Camera::Impl
