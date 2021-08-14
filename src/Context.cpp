@@ -1,9 +1,8 @@
-#include <vulkan/vulkan.h>
 #include <iostream>
 #include <vector>
 #include <optional>
 
-#include "core.h"
+#include "remwave/impl/Context.h"
 
 namespace
 {
@@ -40,11 +39,7 @@ namespace
 namespace remwave
 {
 
-void check()
-{
-}
-
-class VulkanInstance::Impl
+class Context::Impl
 {
     public:
     Impl()
@@ -152,12 +147,17 @@ class VulkanInstance::Impl
     VkQueue _M_graphics_queue;
 };
 
-VulkanInstance::VulkanInstance()
-    : _M_impl(std::make_unique<VulkanInstance::Impl>())
+Context::Context()
+    : _M_impl(std::make_unique<Context::Impl>())
 {}
+Context::~Context() = default;
+Context::Context(Context&& other) = default;
+Context& Context::operator=(Context&& other) = default;
 
-VulkanInstance::~VulkanInstance() = default;
-VulkanInstance::VulkanInstance(VulkanInstance&& other) = default;
-VulkanInstance& VulkanInstance::operator=(VulkanInstance&& other) = default;
+const Context& Context::get()
+{
+    static Context context{};
+    return context;
+}
 
 }

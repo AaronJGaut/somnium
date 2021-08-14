@@ -1,7 +1,5 @@
-#include "remwave.h"
+#include "remwave/remwave.h"
 int main()
 {
-    remwave::check();
-    remwave::VulkanInstance instance;
-    remwave::VulkanInstance instance2 = std::move(instance);
+    remwave::Scene scene;
 }
